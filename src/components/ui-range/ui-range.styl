@@ -1,0 +1,103 @@
+
+:root 
+    --range-postion: 50%
+
+range-track()
+    background-color rgba(137, 112, 229, 0.83)
+    background linear-gradient(
+        to right, 
+        #8970e5 0%,
+        #8970e5 var(--range-postion),
+        #02e5b8 var(--range-postion),
+        #02e5b8 100%
+    )
+    height 16px
+    border-radius 100px
+    color transparent
+
+range-thumb()
+    appearance none
+    height 27px
+    width 27px
+    border-radius: 50%
+    cursor: pointer
+    box-shadow 0px 2px 8px rgba(0, 0, 0, 0.2)
+    margin-top -6px
+    background-color #6C7486
+    border solid 6px #fff
+    // background url("./thumb.svg") no-repeat
+    z-index 1
+    transition background .2s ease-in-out
+    box-sizing border-box
+
+
+
+.ui-range
+    width 100%
+    display flex
+    align-content center
+    justify-items center
+    &__range
+        display flex
+        position relative
+        flex-grow 1
+        width 100%
+    &__progress
+        range-track()
+        display none
+        position absolute
+        right 0
+        left 50%
+        top 50%
+        transform translateY(-50%)
+        pointer-events none
+        filter saturate(3)
+    &__label
+        padding 0 10px
+        display flex
+        justify-content center
+        flex-direction column
+        text-align center
+        font-weight 500
+        font-size 14px
+        color #6C7486
+        line-height 100%
+        flex-grow 1
+        &:first-child
+            padding-left 0
+        &:last-child
+            padding-right 0
+    &__element
+        width 100%
+        appearance: none
+        background-color transparent
+        &:focus
+            outline none
+        &:hover
+            &::-moz-range-thumb
+                background-color #B1B9CC
+            &::-ms-thumb
+                background-color #B1B9CC
+            &::-webkit-slider-thumb
+                background-color #B1B9CC
+        &::-ms-track
+            range-track()
+        &::-moz-range-track
+            range-track()
+        &::-webkit-slider-runnable-track
+            range-track()
+        &::-moz-focus-outer
+            border 0
+        &:-moz-focusring 
+            outline none
+        &::-moz-range-thumb
+            range-thumb()
+        &::-ms-thumb
+            range-thumb()
+        &::-webkit-slider-thumb
+            range-thumb()
+        &::-ms-tooltip 
+            display none
+        &::-ms-fill-lower,
+        &::-ms-fill-upper
+            background-color transparent

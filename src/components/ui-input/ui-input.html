@@ -1,0 +1,18 @@
+<!-- <link rel="stylesheet" href="./ui-input.styl" /> -->
+
+<div class="ui-input {class}">
+	<label for="{id}" class="ui-input__label">{label}</label>
+	<div class="ui-input__content">
+		<input
+			class="ui-input__element"
+			type="{type}"
+			placeholder="{placeholder}"
+			value="{value}"
+			name="{name}"
+			step="{step}"
+			id="{id}"
+			lang="en"
+		/>
+		<slot name="children"></slot>
+	</div>
+</div>

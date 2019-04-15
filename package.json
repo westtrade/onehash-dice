@@ -1,0 +1,32 @@
+{
+	"name": "bet-layout",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"develop": "parcel --no-cache ./src/pages/index.html",
+		"build": "parcel build --no-cache --public-url '.' --no-source-maps    ./src/pages/index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"parcelClean": [
+		"dist"
+	],
+	"devDependencies": {
+		"@westtrade/posthtml-custom-elements": "^0.0.2",
+		"autoprefixer": "^9.5.1",
+		"cssnano": "^4.1.10",
+		"cssnano-preset-advanced": "^4.0.7",
+		"htmlnano": "^0.2.3",
+		"normalize.css": "^8.0.1",
+		"parcel": "^1.12.3",
+		"parcel-plugin-compress": "^1.0.9",
+		"parcel-plugin-pre-clean": "^1.0.0",
+		"postcss": "^7.0.14",
+		"posthtml": "^0.11.3",
+		"posthtml-beautify": "^0.2.5",
+		"stylus": "^0.54.5"
+	},
+	"dependencies": {}
+}

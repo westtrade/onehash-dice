@@ -1,0 +1,54 @@
+.ui-tabs
+    height 46px
+    line-height 46px
+    border-radius 8px 8px 0 0
+    overflow hidden
+    background-clip padding-box
+    display flex
+    &__item
+        letter-spacing .06em
+        font-weight bold
+        font-size 12px
+        position relative
+        display inline-block
+        flex-grow 1
+        height 46px
+        text-align center
+        color #6C7486
+        background-color #CDD9ED
+        text-transform uppercase
+        cursor pointer
+        text-decoration none
+        border-radius 0 0 8px 8px
+        z-index 1
+        width 100%
+        &:focus
+            outline none
+        &:first-child
+            border-radius 8px 0 8px 0 
+        &:last-child
+            border-radius 0 8px 0 8px
+        &-active
+            background-color #f9fbff
+            border-radius 0
+            z-index 0
+            &:last-child
+                border-radius 0 
+            &::after
+                content ""
+                width 8px
+                height 8px
+                background-color #f9fbff
+                position absolute
+                bottom 0
+                right -8px
+            &::before
+                content ""
+                width 8px
+                height 8px
+                background-color #f9fbff
+                position absolute
+                bottom 0
+                left -8px
+
+

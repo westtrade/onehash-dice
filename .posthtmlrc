@@ -1,0 +1,12 @@
+{
+    "plugins": {
+        "@westtrade/posthtml-custom-elements": {},
+        "posthtml-beautify": {
+            "rules": {
+                "indent": "tab",
+                "blankLines": false
+            }
+        },
+
+    }
+}

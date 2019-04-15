@@ -1,0 +1,77 @@
+<!-- <link rel="stylesheet" href="./bet-page.styl" /> -->
+
+<ui-card class="bet-page">
+	<ui-tabs>
+		<ui-tabs-item class="ui-tabs__item-active" href="../../pages/bet-page.html">
+			Ручная ставка
+		</ui-tabs-item>
+		<ui-tabs-item href="../../pages/bet-page-automatic.html">
+			АВТОМАТИЧЕСКИЕ СТАВКИ
+		</ui-tabs-item>
+	</ui-tabs>
+	<ui-card-content>
+		<div class="bet-page__top">
+			<ui-input
+				label="Размер ставки"
+				type="number"
+				id="bet-amount-field"
+				value="0.00000045"
+				step="0.00000001"
+			>
+				<ui-input-icon>
+					<icon-bitcoin></icon-bitcoin>
+				</ui-input-icon>
+
+				<ui-input-spin type="up">
+					<icon-plus></icon-plus>
+				</ui-input-spin>
+				<ui-input-spin type="down">
+					<icon-minus></icon-minus>
+				</ui-input-spin>
+
+				<ui-button data-theme="mini">
+					<icon-flame></icon-flame>
+					max
+				</ui-button>
+			</ui-input>
+			<ui-input
+				type="number"
+				label="Размер выигрыша"
+				id="win-amount-field"
+				value="0.00000187"
+				step="0.00000001"
+			>
+				<ui-input-icon>
+					<icon-bitcoin></icon-bitcoin>
+				</ui-input-icon>
+			</ui-input>
+		</div>
+
+		<ui-highlight type="text" class="bet-page__middle">
+			<ui-input label="Должно выпасть" type="number" value="65.02">
+				<ui-toggler></ui-toggler>
+			</ui-input>
+			<ui-input label="Шанс выигрыша" type="text" value="57.02%">
+				<ui-input-spin type="up">
+					<icon-plus></icon-plus>
+				</ui-input-spin>
+				<ui-input-spin type="down">
+					<icon-minus></icon-minus>
+				</ui-input-spin>
+			</ui-input>
+			<ui-input label="Выплата" type="text" value="&times;1.47">
+				<ui-input-spin type="up">
+					<icon-plus></icon-plus>
+				</ui-input-spin>
+				<ui-input-spin type="down">
+					<icon-minus></icon-minus>
+				</ui-input-spin>
+			</ui-input>
+		</ui-highlight>
+
+		<div class="bet-page__footer">
+			<ui-range min="0" max="100"></ui-range>
+			<ui-button> <icon-dice></icon-dice>cыграть </ui-button>
+		</div>
+	</ui-card-content>
+</ui-card>

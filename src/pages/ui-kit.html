@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic"
+			rel="stylesheet"
+		/>
+
+		<link rel="include" path="../components" />
+		<link rel="stylesheet" href="../styles/common.styl" />
+	</head>
+	<body class="page">
+		<ui-background class="page__background">
+			<ui-container class="page__content">
+				<ui-card>
+					<ui-card-content class="grid">
+						<div class="grid__column">
+							<ui-button> <icon-dice></icon-dice>cыграть</ui-button>
+							<br />
+							<br />
+							<ui-button class="ui-button-hover">
+								<icon-dice></icon-dice>cыграть
+							</ui-button>
+							<br />
+							<br />
+
+							<ui-button class="ui-button-active">
+								<icon-dice></icon-dice>cыграть
+							</ui-button>
+							<br />
+							<br />
+							<br />
+							<br />
+
+							<ui-input type="text"></ui-input>
+							<br />
+							<ui-input class="ui-input-active" type="text"></ui-input>
+
+							<br />
+
+							<ui-highlight>
+								<ui-input label="Должно выпасть">
+									<ui-toggler></ui-toggler>
+								</ui-input>
+							</ui-highlight>
+						</div>
+						<div class="grid__column">
+							<ui-input type="text">
+								<ui-button data-theme="mini">
+									<icon-flame></icon-flame>
+									max
+								</ui-button>
+							</ui-input>
+							<br />
+							<br />
+							<ui-input type="text">
+								<ui-button class="ui-button-hover" data-theme="mini">
+									<icon-flame></icon-flame>
+									max
+								</ui-button>
+							</ui-input>
+							<br />
+							<br />
+							<ui-input type="text">
+								<ui-button class="ui-button-active" data-theme="mini">
+									<icon-flame></icon-flame>
+									max
+								</ui-button>
+							</ui-input>
+							<br />
+							<br />
+							<ui-checkbox></ui-checkbox>
+						</div>
+					</ui-card-content>
+				</ui-card>
+			</ui-container>
+		</ui-background>
+	</body>
+</html>

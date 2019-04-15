@@ -1,0 +1,59 @@
+.ui-toggler
+    min-height 38px
+    display flex
+    font-size 12px
+    line-height 15px
+    font-weight 500
+    position relative
+    flex-grow 1
+    flex-shrink 1
+    &__element
+        text-align center
+        // appearance none
+        cursor pointer
+        left 0
+        top 0
+        width 50%
+        height 100%
+        position absolute
+        opacity 0
+        &:checked 
+            left 50%
+            & + ^[0]__items
+                &::after
+                    background-color #CDD9ED
+                & ^[0]__item:first-child
+                    background-color #6C7486
+                    color #fff
+                & ^[0]__item:last-child
+                    background-color transparent
+                    color #B1B9CC
+        
+    &__item
+        min-width 70px
+        box-sizing border-box
+        flex-grow 1
+        flex-shrink 0
+        cursor pointer
+        padding 11px 13px
+        user-select none
+        border-radius 6px
+        color #B1B9CC
+        transition all .1s ease-in-out
+        &:last-child,
+        &-active
+            background-color #6C7486
+            color #FFFFFF
+    &__items
+        display flex
+        position relative
+        pointer-events none
+        &::after
+            transition background .1s ease-in-out
+            content ''
+            width 2px
+            background-color transparent
+            position absolute
+            top 3px
+            bottom 3px
+            right 0

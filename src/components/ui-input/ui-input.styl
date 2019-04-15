@@ -1,0 +1,76 @@
+.ui-input
+    flex-grow 1
+    flex-shrink 1
+    width 100%
+    &__label
+        display block
+        line-height 15px
+        height 15px
+        color #6C7486
+        font-weight 500
+        font-size 12px
+        margin-bottom 6px
+        text-align left
+        cursor pointer
+        &:empty
+            display none
+    &__content
+        height 46px
+        width 100%
+        line-height 46px
+        box-sizing border-box
+        display flex
+        border 2px solid #CDD9ED
+        border-radius 8px
+        padding 3px
+        color #6C7486
+        background-color #F9FBFF
+        transition border .2s ease-in-out
+        &-active, &:focus-within 
+            border-color #8970E5
+    &__spin
+        padding 0 5px
+        color #B1B9CC
+        cursor pointer
+        transition color .2s ease-in-out
+        flex-shrink 0
+        flex-grow 0
+        display flex
+        justify-content center
+        align-items center
+        &:hover
+            color #6C7486
+        &:focus
+            color #6C7486
+            outline none
+        &-up
+            order 3
+        &-down
+            order 1
+    &__icon
+        display flex
+        order -3
+        padding 0 5px 0 7px
+    &__element
+        border none
+        flex-grow 1
+        background-color transparent
+        color #6C7486
+        text-align inherit
+        padding 0 10px
+        order 2
+        width 100%
+        min-width 50px
+        font-weight 500
+        font-size 16px
+        &[type=number]
+            -moz-appearance:textfield;
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button
+                appearance none
+                margin 0
+        &:focus
+            outline none
+    & .ui-button
+        order 4
+        margin-left 4px
