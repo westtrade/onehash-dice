@@ -1,4 +1,6 @@
 {
+    "recognizeSelfClosing": true,
+    "lowerCaseAttributeNames": false,
     "plugins": {
         "@westtrade/posthtml-custom-elements": {},
         "posthtml-beautify": {
