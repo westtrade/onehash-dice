@@ -6,7 +6,7 @@
 	"scripts": {
 		"develop": "parcel --no-cache ./src/pages/index.html",
 		"build": "parcel build --no-cache --public-url '.' --no-source-maps    ./src/pages/index.html",
-		"build:gh": "parcel build --no-cache --d './' --public-url '.' --no-source-maps    ./src/pages/index.html"
+		"build:gh": "parcel build --no-cache -d './' --public-url '.' --no-source-maps    ./src/pages/index.html"
 	},
 	"keywords": [],
 	"author": "",
